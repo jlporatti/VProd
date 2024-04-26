@@ -1,0 +1,227 @@
+#divTitulo {
+    /*Estilo de la barra de titulo*/
+    font-size: 17px;                        /*Tamaño Letra*/
+    display: inline-flex;                   /*Define el modo de visualisación en Flex*/
+    justify-content: space-between;          /*Reparte el Espacio entre objetos y sus extremos*/
+    background-color: rgb(95, 96, 96);    /*Color del Fondo*/
+    padding: 5px;                           /*Espaciado interno*/
+    width: 100%;                            /*Ancho del Contenedor*/
+    height: 30px;                           /*Altura del Cotenedor*/
+}
+
+#h2Titulo{
+    /*Estilo del Titulo*/
+    color: rgb(234, 68, 71);              /*Color del Titulo*/
+    font-family: 'Merienda';                /*Eleccion del Font*/
+    margin: 0px 0px 0px 10px;               /*Margenes*/
+}
+
+#divTotal{        
+    /*Estilo del Importe Total*/                   
+    width: 350px;                           /*Ancho del Contenedor*/
+    display: inline-flex;                   /*Modo flexible de acomodamiento del contenido*/
+    justify-content: space-between;         /*Modo del Espaciado del Contenido*/
+}
+
+#pMonto{
+    /*Estilo del Titulo*/
+    font-size: 20px;                          /*Tamaño Letra*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   /*Estilo de Letra de Google*/
+    color: rgb(138, 227, 138);              /*Color Letras*/
+    margin: 0px 10px 0px 0px;                 /*Margenes*/
+}
+
+#btnFinalizar{
+    height: 30px;                           /*Altura Contenedor*/
+    width: 80px;                            /*Ancho del Boton*/
+    background-color: #c7c8d4;            /*Color del Fondo*/
+    color: black;                         /*Color Letras*/
+    border-radius: 10px;                    /*Redondez de la Esquinas*/
+    border: groove;                         /*Elimina el borde predeterminado*/
+    cursor: pointer;                        /*Cambia el cursor al pasar por arriba*/
+    font-weight: 700;                       /*Espesor de la Letra*/
+
+}
+
+.clsDivMenu{  
+    /*Estilo del Contenedor del Menú*/
+    display: inline-flex;                     /*Define el modo de visualisación en Flex*/
+    flex-direction: column;                   /*Alinea loe elementos contenidos en una fila*/
+    width: 295px;                             /*Ancho del Contenedor*/
+    height: 400px;                            /*Altura del Cotenedor*/
+    margin-bottom: 1%;                        /*Margen Inferior*/
+    text-align: center;                       /*Alineación del texcto*/
+    /*border-style: solid;                    /*Borde del Recuadro*/
+    /*background-color: rgb(152, 171, 192);   /*Color del Fondo*/
+    border-radius: 20px;
+    background: rgb(213, 212, 212);         /*Color del Fondo*/ 
+}    
+
+.clsDivFotoMenu {
+    /*Estilo del Contenedor de la Foto del Plato*/
+    align-content: center;                   /*Alineación del contenido*/
+    width: 100%;                             /*Ancho de la Celda */
+}
+
+.clsImgFotoMenu{
+    /*Estilo de las Fotos de los Platos*/
+    border-radius: 50%;                     /*Redondeo de esquinas*/
+    width: 70%;                             /*Ancho del Contenedor*/
+    height: 70%;                            /*Altura del Cotenedor*/
+}
+
+.clsDivDescMenu {
+    /* Estilo de la celdas de la tabla correspondiente a la DESCRIPCION del menú*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   /*Estilo de Letra de Google*/
+    color: black;                                     /*Color de la Letra*/
+    align-content: center;                              /*Alineación del Contenido*/
+    width: 100%;                                        /*Ancho del Contenedor*/
+}
+
+.clsH3TitMenu{
+    /*Estilo del Titulo del Menu*/
+    color: navy;              /*Color del Titulo*/
+}
+
+.clsPDescripcion{
+    font-weight: 900;
+}
+
+.clsPPrecio{
+    /*Estilo de los Presios*/
+    font-size: 20px;                        /*Tamaño de letra*/
+    font-weight: 600;                       /*Espedor de la letra*/
+    color: darkgreen;                     /*Color del Descripción*/
+}
+
+.clsSpnCantidad{
+    font-size: 20px;
+    font-weight: 900;
+    padding: 10px;
+    color: navy;
+}
+
+.clsDivBotonMenu {
+    /* Estilo de la celdas de la tabla correspondiente a la BOTON del menú*/
+    align-content: center;                  /*Alineación del contenido*/
+    display: flex;                          /*Define el modo de visualisación en Flex*/
+    justify-content: center;          /*Reparte el Espacio entre objetos y sus extremos*/
+    text-align: center;                     /*Alineación horizontal*/
+    vertical-align: middle;                 /*Alineación vertical*/
+    width: 100%;                            /*Ancho de la Celda*/
+}
+
+.clsBtnSeleccion{
+    /* Estilo de los BOTON del menú*/
+    width: 90px;                            /*Ancho del Boton*/
+    height: 40px;                           /*Alto del Boton*/
+    border-radius: 10px;                    /*Redondez de la Esquinas*/
+    padding: 10px 20px;                     /*Espacio interior */
+    border: groove;                         /*Elimina el borde predeterminado*/
+    cursor: pointer;                        /*Cambia el cursor al pasar por arriba*/
+    font-weight: 700;                       /*Espesor de la Letra*/
+}
+
+.clsBtnAgregar{
+    /* Estilo del BOTON Agregar*/
+    background-color: #3b437d;            /*Color del Boton*/
+    color: white;                         /*Color letra*/
+}
+
+.clsBtnSacar{
+    /* Estilo del BOTON Sacar*/
+    background-color: #615a5a;            /*Color del Boton*/
+    color: white;                         /*Color letra*/
+}
+
+
+#divResumen{
+    /* Estilo del Contenedor del Resumen*/    
+    display: none;                          /*Oculta el contenedor*/
+    position: fixed;                        /*Posicionamiento Fijo*/
+    z-index: 9999;                          /*Lo traigo al Frente de todo*/
+    top: 50%;                               /*Alineado al centro verticalmente */
+    left: 50%;                              /*Alineado al centro horizontalmente */
+    transform: translate(-50%, -50%);       /*Centro la ventana*/
+    width: 280px;                           /*Ancho del contenedor*/
+    height: 520px;                          /*Alto del Boton*/
+    background-color:  #aaaaac;           /*Color del Fondo*/
+    border-radius: 10px;                    /*Redondez de la Esquinas*/
+    padding: 10px 10px;                     /*Espacio interior */
+    border: groove;                         /*Elimina el borde predeterminado*/
+    font-weight: 500;                       /*Espesor de la Letra*/
+}
+
+.clsDivResGrupo{
+    /* Estilo de los grupos de datos del Resumen*/    
+    /*display: flex;                                    /*Defino al contenedor como Flexible para su contenido*/
+    /*flex-direction: column;                           /*Alinea loe elementos contenidos en una fila*/
+    /*justify-content: space-between;                   /*Fija la distribucion del espacio/Alineación en el contenedor*/
+    /*flex-wrap: wrap;                                  /*Si hay desbordamiento de contenido pasa a la linea/columna siguiente*/
+    font-size: 12px;                                    /*Tamaño Letra*/
+    font-weight: 800;                                   /*Grosor Letrs*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   /*Tipo Letra*/
+    color: black;                                     /*Color de la Letra*/
+}
+
+.clsTblCol1{
+    /* Estilo de la columna 1 de la tabla de datos*/
+    width: 80px;                                        /*Ancho contenedor*/
+    font-size: 12px;                                    /*Tamaño Letra*/
+    font-weight: 800;                                   /*Grosor Letrs*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   /*Tipo Letra*/
+    color: black;                                     /*Color de la Letra*/
+}
+
+.clsTblCol2{
+    /* Estilo de la columna 2 de la tabla de datos*/
+    width: 180px;                                       /*Ancho del Contenedor*/
+}
+
+.clsInpDatos{
+    /* Estilo de los datos a Ingresar*/
+    width: 180px;                                       /*Ancho del Contenedor*/
+}
+
+#divTitResPedido{
+    /* Estilo del Titulo del Resumen del Pedido*/
+    font-size: 14px;                                        /*Tamaño Letra*/
+    font-weight: 900;                                       /*Grosor Letrs*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;       /*Tipo Letra*/
+    color: navy;                                          /*Color de la Letra*/
+}
+
+#divResPedido{
+    /* Estilo del del Resumen del Pedido*/
+    width: 100%;                                            /*Ancho del Contenedor*/
+    height: 20%;                                            /*Alto del Contenedor*/
+    overflow: auto;                                         /*Activo escroll*/
+}
+
+
+#divResBotones{
+    /* Estilo del contenedor de botones del Resumen*/
+    display: flex;                   /*Define el modo de visualisación en Flex*/
+    justify-content: space-between;          /*Reparte el Espacio entre objetos y sus extremos*/
+}
+
+
+/* Estilos Responsivos*/
+@media only screen and (max-width: 650px) {
+    /*Estilo para celular*/
+    .clsDivTotal{
+        width: 280px;                /*Ancho del Contenedor*/
+    }
+    #h2Titulo{
+        font-size: 18px;;            /*Tamaño Letra*/
+    }
+    #pMonto{
+        margin-top: 3px;             /*Margen superior*/
+        font-size: 18px;             /*Tamaño Letra*/
+    }
+
+    .clsAside {
+        justify-content: space-evenly;         /*Reparte el Espacio entre objetos y sus extremos*/
+    }
+
+}

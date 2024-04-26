@@ -1,0 +1,74 @@
+.clsDiv{  
+    /*Estilo del Contenedor del Menú*/
+    flex:1;                                   /*Hace que el contenedor cresca y ocupe el contenedor*/
+    display: inline-flex;                     /*Define el modo de visualisación en Flex*/
+    flex-direction: column;                   /*Alinea loe elementos contenidos en una fila*/
+    background-color: rgb(152, 171, 192);   /*Color del Fondo*/
+    width: 47%;                               /*Ancho del Contenedor*/
+    height: 400px;                            /*Altura del Cotenedor*/
+    margin-bottom: 1%;                        /*Margen Inferior*/
+    text-align: center;                       /*Alineación del texcto*/
+    border-style: solid;                      /*Borde del Recuadro*/
+    padding: 1%;                              /*Marco libre*/
+    overflow-y: auto;                         /*Barra de Desplazamiento en Vertical*/
+}    
+
+#h2Descripcion{
+    text-align: left;                       /*Alineación a Izquierda*/
+    font-family: 'Tangerine', serif;        /*Eleccion del Font*/
+    font-family: 'Lobster', serif;          /*Eleccion del Font*/
+    color: rgb(144, 66, 67);              /*Color del Titulo*/
+    font-size: 35px;                        /*Tamaño de la letra*/
+    font-weight: 500;                       /*Espedor de la letra*/
+    line-height: 1.2;                       /*Interlineado entre textos*/
+    margin: 0;                              /*Define el Margen*/
+}
+
+.clsOpcionPedido{
+    text-align: left;                       /*Alineación a Izquierda*/
+    font-family: 'Amaranth', serif;         /*Eleccion del Font*/
+    color: rgb(180, 91, 58);              /*Color del Titulo*/
+    font-size: 30px;                        /*Tamaño de la letra*/
+    line-height: 1.2;                       /*Interlineado entre textos*/
+    margin: 0;                              /*Define el Margen*/
+}
+
+
+/* Estilos Responsivos*/
+@media only screen and (max-width: 1350px) {
+    /*Estilo para celular*/
+    #h2Descripcion{
+        font-size: 32px;                        /*Tamaño de la letra*/
+    }
+    .clsOpcionPedido{
+        font-size: 25px;                        /*Tamaño de la letra*/
+    }
+}
+
+/* Estilos Responsivos*/
+@media only screen and (max-width: 1000px) {
+    /*Estilo para celular*/
+    #h2Descripcion{
+        font-size: 28px;                        /*Tamaño de la letra*/
+    }
+    .clsOpcionPedido{
+        font-size: 23px;                        /*Tamaño de la letra*/
+    }
+}
+
+/* Estilos Responsivos*/
+@media only screen and (max-width: 800px) {
+    /*Estilo para celular*/
+    .clsDiv {
+        width: 96%;                       /*Ancho de los contenedores*/
+    }
+    #h2Descripcion{
+        font-size: 20px;                        /*Tamaño de la letra*/
+    }
+    .clsOpcionPedido{
+        font-size: 16px;                        /*Tamaño de la letra*/
+    }
+    #asdPrincipal{
+        flex-direction: column;                 /*Alinea loe elementos contenidos en una columna*/     
+    }
+}

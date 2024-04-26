@@ -1,0 +1,130 @@
+#hdrHeader {
+    /*Estilo del HEADER de Pagina*/
+    background-color: #333;               /*Color del fondo*/    
+    color: #fff;                          /*Color de la letra*/
+    padding: 5px;                           /*Espaciado interno*/
+    display: flex;                          /*Activa flex para el contenedor*/
+    justify-content: space-between;         /*Espaciado horizontal entre los items contenidos*/
+    align-items: center;                    /*Espaciado vertical entre los items contenidos*/
+    width: 100%;                            /* Ajustar el ancho al 100% */
+    }
+
+#h1Empresa{
+    /*Estilo del Nombre de la empresa*/ 
+    color: #23dc8c;                       /*Color del Descripción*/
+    font-size: 70px;                        /*Tamaño de la letra*/
+    font-family: 'Tangerine', serif;        /*Eleccion del Font*/
+    line-height: .7;                         /*Interlineado entre textos*/
+    text-shadow: 4px 4px 4px #c14949;     /*Sombreado de la letra*/
+    margin: 0;                              /*Define el Margen*/
+}
+
+#imgLogo{
+    border-radius: 50%;                     /*Redondeo de esquinas*/
+}
+
+#h4Descripcion{
+    /*Estilo de la Descripción de la empresa*/ 
+    color: rgb(54, 54, 204);              /*Color del Titulo*/
+    font-family: 'Tangerine', serif;        /*Eleccion del Font*/
+    font-size: 25px;                        /*Tamaño de la letra*/
+    line-height: .7;                        /*Interlineado entre textos*/
+    margin: 0;                              /*Define el Margen*/
+}
+
+#navMenu {
+        /*Estilo de la barra de menú*/    
+        padding: 5px;                          /*Espaciado interno*/
+        background-color: #444;              /*Color del fondo*/
+        overflow: hidden;                      /*Si el contenido sobrepasa el ancho lo Oculta */
+        width: 100%;                           /* Ajustar el ancho al 100% */
+        margin-top: 1px;                       /*Margen superior*/
+        margin-bottom: 1px;                    /*Margen inferior*/
+        height: 30px;                          /*Altura del Cotenedor*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;   /*Tipo Letra*/
+}    
+
+.clsAMenuPrincipal {
+    /* Estilos de los items del Menú de Opciones*/    
+    float: left;                            /*Alinea los items del menú a Izquierda*/
+    color: #23dc8c;                       /*Color de la letra*/
+    padding: 7px 20px;                      /*Espaciado interno*/
+    text-decoration: none;                  /*Elimina subrrallado de los items del menú*/
+}
+
+.clsAMenuPrincipal:hover {
+    /* Estilos de los items del Menú de Opciones*/    
+    background-color: #c46d6d;            /*Color del fondo*/
+    color: #ffffff;                       /*Color de la letra*/
+}
+
+#stnPrincipal{
+    /* Estilo de la Pantalla Util*/
+    display: flex;                          /*Defino al contenedor como Flexible para su contenido*/
+    flex-direction: row;                    /*Alinea loe elementos contenidos en una fila*/  
+    background-color: #bcbcbf;            /*Color del fondo*/ 
+    color: #fff;                          /*Color de la letra*/
+    text-align: center;                     /*Alineación del texto*/
+    padding: 5px;                           /*Espaciado interno*/
+    width: 100%;                            /*Ancho del Contenedor*/
+    height: auto;                           /*Altura del Cotenedor*/
+    overflow-y: auto;                       /*Barra de Desplazamiento en Vertical*/
+}
+
+#asdPrincipal{
+    /* Estilo de los sub contenedores de la Pantalla*/
+    display: flex;                          /*Define el modo de visualisación en Flex*/
+    flex-direction: row;                    /*Alinea loe elementos contenidos en una columna*/     
+    flex-wrap: wrap;                        /*Hace que los contenedores pasen de fila a columna al achicar la pantalla*/
+    justify-content: space-between;         /*Reparte el Espacio entre objetos*/
+    width: 100%;                             /*Ancho del Contenedor*/
+    height: 440px;                          /*Altura Contenedor*/
+    margin: 0%;                             /*Margenes*/
+    overflow-y: auto;                       /*Barra de Desplazamiento en Vertical*/
+    background-color:rgb(213, 212, 212);  /*Color del Fondo*/
+}  
+
+#ftrPagina{
+    /*Estilo del FOOTER de Pagina*/
+        display: flex;                                      /*Define el modo de visualisación en Flex*/
+        justify-content: space-between;                     /*Reparte el Espacio entre objetos y sus extremos*/
+    background-color: #333;                               /*Color del fondo*/
+    color: #fff;                                          /*Color de la letra*/
+    /*text-align: center;                                   /*Alineación del texto*/
+    padding: 5px;                                           /*Espaciado interno*/
+    width: 100%;                                            /*Ajustar el ancho al 100% */
+    line-height: 0;                                         /*Interlineado entre textos*/
+    margin-top: 2px;                                        /*Margen superior*/
+    font-size: 12px;                                        /*Tamaño Letra*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;       /*Tipo Letra*/
+}
+
+#divMensaje{
+    /*Estilo del div de mensajes*/
+    display: inline-flex;                                   /*Define el modo de visualisación en Flex*/
+    justify-content: space-between;                         /*Reparte el Espacio entre objetos y sus extremos*/
+    padding-right: 10px;                                    /*Espaciado interno derecho*/
+    padding-top: 10px;                                      /*Espaciado interno Arriba*/
+}
+
+#pMensaje{
+    /*Estilo del p de mensajes*/
+    padding-left: 10px;
+    font-size: 12px;                                        /*Tamaño Letra*/
+    font-weight: 600;                                       /*Grosor Letrs*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;       /*Tipo Letra*/   
+}
+
+#pAviso{
+    font-size: 12px;                                        /*Tamaño Letra*/
+    font-weight: 600;                                       /*Grosor Letrs*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;       /*Tipo Letra*/  
+    color: yellow                                         /*Color Letra*/; 
+    animation: titileo 1s infinite; /* La animación se repite infinitamente */
+}
+
+@keyframes titileo {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

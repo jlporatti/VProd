@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morfemos.com</title>
+    <link rel="stylesheet" href="./CSS/Style_Estandar.css">
+    <link rel="stylesheet" href="./CSS/Style_Productos.css">
+
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Merienda">
+
+    <link rel="icon" href="./Imagenes/Favicon.jpg" type="jpg">          
+    <title>Document</title>
+</head>
+<body>
+    <header id="hdrHeader">
+        <div id="divHeader">
+            <h1 id="h1Empresa">Morfemos.com</h1>
+            <br>
+            <h4 id="h4Descripcion">Alta cocina desde la comodidad de tu casa!!!</h4>
+        </div>
+        <img id="imgLogo" src="./Imagenes/Logo.jpg" alt="Logotipo de tu Empresa">
+    </header>
+    <div id="divMenu">
+        <nav id="navMenu">
+            <a class="clsAMenuPrincipal" href="index.html">Inicio</a>
+            <a class="clsAMenuPrincipal" href="productos.html">Productos</a>
+            <a class="clsAMenuPrincipal" href="#">Servicios</a>
+            <a class="clsAMenuPrincipal" href="#">Contacto</a>    
+        </nav>
+    </div>
+<div id="divTitulo">
+    <h2 id="h2Titulo">Platos del Día</h2>
+    <div id="divTotal">
+        <p id="pMonto">Importe Total: $0</p>
+        <input type="button" ID="btnFinalizar" value="Finalizar" onclick="btnOnClickFinalizar()">
+    </div>
+</div>
+    <section id="stnPrincipal">
+       
+        <aside id="asdPrincipal">
+
+            <div id="divMenu1" class="clsDivMenu">
+                <div class="clsDivFotoMenu">
+                    <img class="clsImgFotoMenu" src="./Imagenes/Suprema.jpg" alt="Plato 1">
+                </div>
+                <div class="clsDivDescMenu">
+                    <h3 id="h3TitMenu1" class="clsH3TitMenu">Opción 1</h3>
+                    <p id="pDescripcion1" class="clsPDescripcion">Suprema Frita con Papas al Horno y Radicheta</p>
+                    <p id="pPrecio1" class="clsPPrecio">$ 6500</p>
+                </div>
+                <div class="clsDivBotonMenu">
+                    <input type="button" class="clsBtnSeleccion clsBtnSacar" value="Sacar" onclick="btnOnClickAgregarSacar(1,1)">
+                    <span id="spnCantidad1" class="clsSpnCantidad ">0</span>
+                    <input type="button" class="clsBtnSeleccion clsBtnAgregar" value="Agregar" onclick="btnOnClickAgregarSacar(2,1)">
+                </div>
+            </div>
+            <div id="divMenu2" class="clsDivMenu">
+                <div class="clsDivFotoMenu">
+                    <img class="clsImgFotoMenu" src="./Imagenes/Suprema.jpg" alt="Plato 2">
+                </div>
+                <div class="clsDivDescMenu">
+                    <h3 id="h3TitMenu2" class="clsH3TitMenu">Opción 1</h3>
+                    <p id="pDescripcion2" class="clsPDescripcion">Suprema Frita con Papas al Horno y Radicheta</p>
+                    <p id="pPrecio2" class="clsPPrecio">$ 6500</p>
+                </div>
+                <div class="clsDivBotonMenu">
+                    <input type="button" class="clsBtnSeleccion clsBtnSacar" value="Sacar" onclick="btnOnClickAgregarSacar(1,2)">
+                    <span id="spnCantidad2" class="clsSpnCantidad ">0</span>
+                    <input type="button" class="clsBtnSeleccion  clsBtnAgregar" value="Agregar" onclick="btnOnClickAgregarSacar(2,2)">
+                </div>
+            </div>
+            <div id="divMenu3"  class="clsDivMenu">
+                <div class="clsDivFotoMenu">
+                    <img class="clsImgFotoMenu" src="./Imagenes/Suprema.jpg" alt="Plato  3">
+                </div>
+                <div class="clsDivDescMenu">
+                    <h3 id="h3TitMenu3" class="clsH3TitMenu">Opción 2</h3>
+                    <p id="pDescripcion3" class="clsPDescripcion">Suprema Frita con Papas al Horno y Radicheta</p>
+                    <p id="pPrecio3" class="clsPPrecio">$ 6500</p>
+                </div>
+                <div class="clsDivBotonMenu">
+                    <input type="button" class="clsBtnSeleccion clsBtnSacar" value="Sacar" onclick="btnOnClickAgregarSacar(1,3)">
+                    <span id="spnCantidad3" class="clsSpnCantidad ">0</span>
+                    <input type="button" class="clsBtnSeleccion  clsBtnAgregar" value="Agregar" onclick="btnOnClickAgregarSacar(2,3)">
+
+                </div>
+            </div>
+            <div id="divMenu4" class="clsDivMenu">
+                <div class="clsDivFotoMenu">
+                    <img class="clsImgFotoMenu" src="./Imagenes/Suprema.jpg" alt="Plato 4">
+                </div>
+                <div class="clsDivDescMenu">
+                    <h3 id="h3TitMenu4" class="clsH3TitMenu">Opción 3</h3>
+                    <p id="pDescripcion4" class="clsPDescripcion">Suprema Frita con Papas al Horno y Radicheta</p>
+                    <p id="pPrecio4" class="clsPPrecio">$ 6500</p>
+                </div>
+                <div class="clsDivBotonMenu">
+                    <input type="button" class="clsBtnSeleccion clsBtnSacar" value="Sacar" onclick="btnOnClickAgregarSacar(1,4)">
+                    <span id="spnCantidad4" class="clsSpnCantidad ">0</span>
+                    <input type="button" class="clsBtnSeleccion  clsBtnAgregar" value="Agregar" onclick="btnOnClickAgregarSacar(2,4)">
+                </div>
+            </div>
+            <div id="divMenu5" class="clsDivMenu">
+                <div class="clsDivFotoMenu">
+                    <img class="clsImgFotoMenu" src="./Imagenes/Sorrentinos.jpg" alt="Plato 5">
+                </div>
+                <div class="clsDivDescMenu">
+                    <h3 id="h3TitMenu5" class="clsH3TitMenu">Opcion 4</h3>
+                    <p id="pDescripcion5" class="clsPDescripcion">Sorrentinos de Jamon y Queso con Salsa al Pesto</p>
+                    <p id="pPrecio5" class="clsPPrecio">$ 7000</p>
+                </div>
+                <div class="clsDivBotonMenu">
+                    <input type="button" class="clsBtnSeleccion clsBtnSacar" value="Sacar" onclick="btnOnClickAgregarSacar(1,5)">
+                    <span id="spnCantidad5" class="clsSpnCantidad ">0</span>
+                    <input type="button" class="clsBtnSeleccion  clsBtnAgregar" value="Agregar" onclick="btnOnClickAgregarSacar(2,5)">
+                </div>
+            </div>
+
+            <div id="divMenu6" class="clsDivMenu">
+                <div class="clsDivFotoMenu">
+                    <img class="clsImgFotoMenu" src="./Imagenes/PolloRelleno.jpg" alt="Plato 6">
+                </div>
+                <div class="clsDivDescMenu">
+                    <h3 id="h3TitMenu6" class="clsH3TitMenu">Opción 5</h3>
+                    <p id="pDescripcion6" class="clsPDescripcion">Pechuga rellena con Hongos, Espinaca y Jamon</p>
+                    <p id="pPrecio6" class="clsPPrecio">$ 7500</p>
+                </div>
+                <div class="clsDivBotonMenu">
+                    <input type="button" class="clsBtnSeleccion clsBtnSacar" value="Sacar" onclick="btnOnClickAgregarSacar(1,6)">
+                    <span id="spnCantidad6" class="clsSpnCantidad ">0</span>
+                    <input type="button" class="clsBtnSeleccion clsBtnAgregar" value="Agregar" onclick="btnOnClickAgregarSacar(2,6)">
+                </div>
+            </div>
+            <div id="divMenu7" class="clsDivMenu">
+                <div class="clsDivFotoMenu">
+                    <img class="clsImgFotoMenu" src="./Imagenes/Fideos.jpg" alt="Plato 7">
+                </div>
+                <div class="clsDivDescMenu">
+                    <h3 id="h3TitMenu7" class="clsH3TitMenu">Opción 6</h3>
+                    <p id="pDescripcion7" class="clsPDescripcion">Fideos al Huevo con Salsa Pesto, cherry mosarella</p>
+                    <p id="pPrecio7" class="clsPPrecio">$ 4000</p>
+                </div>
+                <div class="clsDivBotonMenu">
+                    <input type="button" class="clsBtnSeleccion clsBtnSacar" value="Sacar" onclick="btnOnClickAgregarSacar(1,7)">
+                    <span id="spnCantidad7" class="clsSpnCantidad ">0</span>
+                    <input type="button" class="clsBtnSeleccion clsBtnAgregar" value="Agregar" onclick="btnOnClickAgregarSacar(2,7)">
+                </div>
+            </div>
+        </aside>
+    </section>
+    <footer id="ftrPagina">
+        <div id="divDireccion">
+            <p>La Ocuridad 25 - CABA </p>
+            <p>Teléfono de contacto: 11 5555-5656</p>
+            <p>Correo electrónico: Consultas@Morfemos.com</p>
+        </div>
+        <div id="divMensaje">
+         <p id="pAviso"></p> 
+         <p id="pMensaje"></p> 
+        </div>
+    </footer>
+
+    <!-- Patalla Flotante Resumen-->
+    <div id="divResumen">
+        <div class="clsDivResGrupo">
+            <table>
+                <tr>
+                    <td class="clsTblCol1">
+                        <label for="iptNombre">Nombre:</label>
+                    </td>
+                    <td class="clsTblCol1">
+                        <input type="text" id="iptNombre" name="iptNombre" class="clsInpDatos" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="clsTblCol1">
+                        <label for="iptEmail">eMail:</label>
+                    </td>
+                    <td class="clsTblCol2">
+                        <input type="text" id="iptEmail" name="iptEmail" class="clsInpDatos" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="clsTblCol1">
+                        <label for="iptTelefono">Telefono:</label>
+                    </td>
+                    <td class="clsTblCol2">
+                        <input type="phone" id="iptTelefono" name="iptTelefono" class="clsInpDatos" required>                        
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td class="clsTblCol1">
+                        <label for="iptDireccion1">Dirección:</label>
+                    </td>
+                    <td class="clsTblCol2">
+                        <input type="text" id="iptDireccion1" class="clsInpDatos" required placeholder="Ingresar Calle y Nro">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="clsTblCol1">
+                    </td>
+                    <td class="clsTblCol2">
+                        <input type="text" id="iptDireccion2" class="clsInpDatos" placeholder="Ingresar Piso y Depto">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="clsTblCol1">
+                        <label for="sltBarrio">Barrio:</label>
+                    </td>
+                    <td class="clsTblCol2">
+                        <select id="sltBarrio" name="sltBarrio" required aria-placeholder="Seleccionar el Barrio">
+                            <option value="CABA">Caballito</option>
+                            <option value="AMBA">Flores</option>
+                            <option value="AMBA">P Chacabuco</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <label for="stxtAreaAclaraciones">Aclaraciones:</label>
+                        <textarea  name="txtAreaAclaraciones" id="txtAreaAclaraciones" cols="34" rows="4"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="clsDivResGrupo">    
+            <fieldset name="fdsGenero" style="width: 120px; display: inline-block;">
+                <legend>Forma de Pago:</legend>
+                <input type="radio" name="iptPago" value="Efectivo" checked>Efectivo
+                <br>
+                <input type="radio" name="iptPago" value="eBilletera">eBilletera
+                <br>
+                <input type="radio" name="iptPago" value="Tarjeta">Tarjeta                    
+            </fieldset>
+            <br>
+            <br>            
+        </div>
+
+        <div id="divTitResPedido">Resumen del Pedido:</div>
+        <div ID="divResPedido">
+            <textarea  name="txtResumen" id="txtResumen" cols="34" rows="6" readonly></textarea>
+        </div>
+
+        <div id="divResBotones">
+            <input type="button" class="clsBtnSeleccion  clsBtnSacar" value="Cancelar" onclick="btnOnClickCancelar()">
+            <input type="button" class="clsBtnSeleccion  clsBtnAgregar" value="Enviar" onclick="btnOnClickEnviar()">
+        </div>
+    </div>
+
+    <script src="./JavaScript/productos.js"></script>
+</body>
+</html>
